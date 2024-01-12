@@ -1,0 +1,22 @@
+<!-- pagina-inicio.page.html -->
+
+<ion-content class="ion-padding">
+  <ion-card id="card">
+    <ion-card-content>
+      <ion-avatar class="avatar">
+        
+        <img src="assets/images.png" alt="Avatar">
+      </ion-avatar>
+
+      <ion-label class="user-info">
+        <ng-container *ngIf="user">
+          <h2>{{ user.nombre }}</h2>
+          <h3>{{ user.apellido }}</h3>
+        </ng-container>
+      </ion-label>
+    </ion-card-content>
+  </ion-card>
+  <ion-button [routerLink]="['codigoQr']" expand="block" fill="clear" shape="round">
+    Generar QR
+  </ion-button>
+</ion-content>

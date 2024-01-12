@@ -1,0 +1,34 @@
+
+ion-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  ion-card {
+    max-width: 400px; /* Ajusta el ancho máximo según tus necesidades */
+    width: 100%;
+    margin-left: 0%;
+  }
+  
+  ion-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .avatar {
+    /* Estilos específicos para el avatar si es necesario */
+    margin-bottom: 10px;
+    width: 50%;
+    height: 50%; /* Ajusta el margen inferior según tus necesidades */
+  }
+  
+  .user-info {
+    h2, h3 {
+      margin: 0; /* Elimina los márgenes por defecto de los encabezados */
+    }
+  }
+  
