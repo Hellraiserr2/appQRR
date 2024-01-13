@@ -37,6 +37,11 @@ export class LoginPage {
         await alert.present();
       }
     }
+    olvidoContrasena(): void {
+      // Puedes redirigir a una página específica para restablecer la contraseña
+      // o realizar cualquier otra acción necesaria.
+      this.navCtrl.navigateForward('/reset-pass');
+    }
   }
 
 

@@ -23,6 +23,10 @@ const routes: Routes = [
     path: 'pagina-inicio',
     loadChildren: () => import('./pagina-inicio/pagina-inicio.module').then( m => m.PaginaInicioPageModule)
   },
+  {
+    path: 'reset-pass',
+    loadChildren: () => import('./reset-pass/reset-pass.module').then( m => m.ResetPassPageModule)
+  },
 ];
 
 @NgModule({
