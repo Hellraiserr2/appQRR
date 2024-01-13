@@ -29,7 +29,11 @@ export class RegisterPage {
         contrasena: this.contrasena,
       };
 
-      // Almacenar el usuario en localStorage (puedes implementar tu lógica de validación)
+      // Almacenar el usuario en localStorage En general, 
+      //JSON.stringify se utiliza para serializar objetos
+      // JavaScript a formato JSON, lo cual es comúnmente 
+      //necesario cuando trabajas con almacenamiento de datos o
+      //intercambio de datos entre cliente y servidor
       localStorage.setItem('usuarioRegistrado', JSON.stringify(newUser));
 
       // Redirigir a la página de inicio de sesión u otra página

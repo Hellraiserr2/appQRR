@@ -16,9 +16,13 @@ export class LoginPage {
     private navCtrl: NavController, 
     private authService: AuthService,
     private alertController: AlertController) {}
-
+    //utiliza JSON.stringify(newUser) para convertir 
+    //ese objeto a una representación en formato JSON. 
+    //La variable newUserJSON contendrá una cadena de 
+    //texto que representa la estructura y valores del objeto newUser en formato JSON.
+    //el formato JSON sirve para almacenar los datos del local storage
     async iniciarSesion(): Promise<void> {
-      // Simular lógica de autenticación (puedes reemplazar esto con tu propia lógica)
+      // Simular lógica de autenticación 
       if (this.authService.login(this.usuario, this.contrasena)) {
         // Inicio de sesión exitoso, redirigir a la página de inicio
         this.navCtrl.navigateRoot('/pagina-inicio');
@@ -29,7 +33,7 @@ export class LoginPage {
           message: 'Credenciales inválidas. Por favor, inténtalo de nuevo.',
           buttons: ['OK'],
         });
-  
+         // El código aquí se ejecutará después de que la promesa se haya resuelto
         await alert.present();
       }
     }
