@@ -9,14 +9,18 @@
       </ion-avatar>
 
       <ion-label class="user-info">
+        <!--renderiza el contenido del ng-container si la expresión
+           proporcionada (user en este caso) es evaluada como verdadera 
+           (es decir, si user no es nulo o indefinido). -->
         <ng-container *ngIf="user">
+          <p>Bienvenido</p>
           <h2>{{ user.nombre }}</h2>
           <h3>{{ user.apellido }}</h3>
         </ng-container>
       </ion-label>
     </ion-card-content>
   </ion-card>
-  <ion-button [routerLink]="['codigoQr']" expand="block" fill="clear" shape="round">
+  <ion-button [routerLink]="['codigoqr']" expand="block" fill="clear" shape="round">
     Generar QR
   </ion-button>
 </ion-content>

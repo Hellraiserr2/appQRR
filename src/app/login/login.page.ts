@@ -22,7 +22,6 @@ export class LoginPage {
     //texto que representa la estructura y valores del objeto newUser en formato JSON.
     //el formato JSON sirve para almacenar los datos del local storage
     async iniciarSesion(): Promise<void> {
-      // Simular lógica de autenticación 
       if (this.authService.login(this.usuario, this.contrasena)) {
         // Inicio de sesión exitoso, redirigir a la página de inicio
         this.navCtrl.navigateRoot('/pagina-inicio');

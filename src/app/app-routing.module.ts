@@ -27,6 +27,10 @@ const routes: Routes = [
     path: 'reset-pass',
     loadChildren: () => import('./reset-pass/reset-pass.module').then( m => m.ResetPassPageModule)
   },
+  {
+    path: 'codigoqr',
+    loadChildren: () => import('./codigoqr/codigoqr.module').then( m => m.CodigoqrPageModule)
+  },
 ];
 
 @NgModule({
